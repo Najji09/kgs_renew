@@ -21,6 +21,7 @@ body {
 div#wrap {
   width: 100%;
   position: relative;
+  z-index: 0;
 }
 div.nav_wrap {
   background-color: #0151a4;
@@ -206,56 +207,29 @@ section {
   width: 100%;
   height: calc(40vw);
   overflow: hidden;
-  position: absolute;
+  position: relative;
   top: 100px;
+  left: 0;
   z-index: -1;
 }
 
 section div.slide {
   width: 300vw;
+  position: relative;
+}
+
+section li {
+  float: left;
 }
 section img {
   width: 100vw;
   display: block;
   position: relative;
-  float: left;
 }
-section div i {
-  position: absolute;
-  z-index: 5;
-  cursor: pointer;
-}
-section div.arrow i.fa-caret-square-left {
-  top: 18vw;
-  font-size: 50px;
-  color: #888;
-  left: 300px;
-  opacity: 0.4;
-}
-section div.arrow i.fa-caret-square-right {
-  top: 18vw;
-  font-size: 50px;
-  color: #888;
 
-  right: 300px;
-  opacity: 0.4;
-}
-section div.circle i {
-  top: 37vw;
-}
-section div.circle i.one {
-  left: 700px;
-}
-section div.circle i.three {
-  left: 50%;
-  transform: translateX(-50%);
-}
-section div.circle i.two {
-  right: 700px;
-}
 main {
-  position: absolute;
-  top: calc(40vw + 160px);
+  position: relative;
+  top: 200px;
   width: 1000px;
   left: 50%;
   transform: translateX(-50%);
@@ -639,8 +613,8 @@ footer {
   background-color: #e2e2e2;
   width: 100%;
   height: 200px;
-  position: absolute;
-  top: 1360px;
+  position: relative;
+  top: 300px;
 }
 footer div.inner {
   width: 1000px;
