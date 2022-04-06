@@ -1,0 +1,29 @@
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}a{color:inherit;text-decoration:none}li{list-style:none}:root{--accent-color: #0151a4;--main-color-1: #008ad1;--main-color-2: #e87206}section.wrap{position:relative;width:1200px;margin:0 auto;top:150px}section.wrap header.title{position:relative;height:100%;width:1200px;margin-bottom:20px}section.wrap header.title::after{display:block;clear:both;content:''}section.wrap header.title h1{color:var(--accent-color);font-size:48px;width:1200px;-webkit-box-shadow:none;box-shadow:none;border-radius:0;text-align:center;height:96px;line-height:96px;display:block;float:none}section.wrap header.title div.bread{margin-top:20px;width:1200px;height:36px;background-color:#eee;line-height:36px}section.wrap header.title div.bread ul{float:right;padding-right:20px}section.wrap header.title div.bread ul li{float:left;margin:0 10px}section.wrap header.title div.bread::after{clear:both;display:block;content:''}section.wrap nav{width:200px;border:1px solid #888}section.wrap nav>dl dt{text-align:center;width:200px;height:60px;font-size:20px;line-height:60px;display:block;color:var(--main-color-1)}section.wrap nav>dl dd>ul{width:200px;text-align:right}section.wrap nav>dl dd>ul>li{-webkit-box-sizing:border-box;box-sizing:border-box;border-bottom:1px solid #888}section.wrap nav>dl dd>ul>li:first-child{border-top:1px solid #888}section.wrap nav>dl dd>ul>li:last-child{border-bottom:none}section.wrap nav>dl dd>ul>li a{height:48px;line-height:48px;display:block;width:100%;height:100%;padding-right:10px}section.wrap nav>dl dd>ul>li ul{text-align:left;margin-left:20px;display:none}section.wrap nav>dl dd>ul>li:hover>a{color:var(--main-color-2);font-weight:bold}section.wrap nav>dl dd>ul>li>ul>li:hover a{color:var(--main-color-2)}section.wrap nav>dl dd>ul>li.selected{font-weight:bold}section.wrap nav>dl dd>ul>li.selected>a{background-color:#e87206;color:#fff}section.wrap nav>dl dd>ul>li.selected>ul{display:block}section.wrap nav>dl dd>ul>li.selected>ul li.selected>a{color:var(--main-color-2)}
+splay: none;
+}
+
+section.wrap nav > dl dd > ul > li:hover > a {
+  color: var(--main-color-2);
+  font-weight: bold;
+}
+
+section.wrap nav > dl dd > ul > li > ul > li:hover a {
+  color: var(--main-color-2);
+}
+
+section.wrap nav > dl dd > ul > li.selected {
+  font-weight: bold;
+}
+
+section.wrap nav > dl dd > ul > li.selected > a {
+  background-color: #e87206;
+  color: #fff;
+}
+
+section.wrap nav > dl dd > ul > li.selected > ul {
+  display: block;
+}
+
+section.wrap nav > dl dd > ul > li.selected > ul li.selected > a {
+  color: var(--main-color-2);
+}

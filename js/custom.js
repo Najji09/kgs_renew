@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
   console.log('loaded');
   setInterval(function () {
-    $('section ul').animate({ left: '1200px' }, 300, function () {
-      $('section ul').append($('section ul li').eq(0));
-      $('section ul').css('left', 0);
+    $('div.slide ul').animate({ left: '1200px' }, 300, function () {
+      $('div.slide ul').append($('section ul li').eq(0));
+      $('div.slide ul').css('left', 0);
     });
   }, 3000);
   $('ul.news-title li').click(function (e) {
@@ -21,5 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     $(this).addClass('on');
     $('div.notice-article ul').removeClass('on');
     $('div.notice-article ul').eq(index).addClass('on');
+  });
+  $('nav dl dd ul li').mouseenter(function () {
+    $(this).children('ul').stop().slideDown();
+  });
+  $('nav dl dd ul li').mouseleave(function () {
+    $(this).children('ul').stop().slideUp();
   });
 });
